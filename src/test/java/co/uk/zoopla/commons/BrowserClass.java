@@ -9,6 +9,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 
+import java.util.concurrent.TimeUnit;
+
 public class BrowserClass extends DriverClass {
     private WebDriver initChrome()
     {
@@ -56,15 +58,25 @@ public class BrowserClass extends DriverClass {
             case "IE":
             case "InternetExplorer":
             case "ie":
-                case "Internet Explorer";
+            case "Internet Explorer":
                 driver = initInternetExplorer();
                 break;
-                case "Firefox";
+            case "Firefox":
                 driver = initiFirefox();
                 break;
             default:
                 driver = initChrome();
         }
+
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
+    }
+
+    public void closeBrowser()
+    {
+        driver.manage().deleteAllCookies();
+        driver.quit();
     }
 
 }

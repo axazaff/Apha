@@ -1,0 +1,378 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-07T21:33:05.677Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11293246300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Customer can search for any property",
+        "description": "",
+        "id": "search-property-for-sale;customer-can-search-for-any-property;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d79.0.3945.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-IREQ26A\u0027, ip: \u0027192.168.1.251\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\\Users\\Laptop\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 3a90d702045d298fad0ce47ff7f2cfb3\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)\r\n\tat co.uk.zoopla.commons.BrowserClass.closeBrowser(BrowserClass.java:78)\r\n\tat co.uk.zoopla.hooks.Hook.tearDown(Hook.java:42)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 79975500,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1577298600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to zoopla homepage",
+            "match": {
+              "location": "ForSaleSearchSteps.i_navigate_to_zoopla_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1690928400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter a \"Manchester\" in the seach text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manchester\"",
+                  "offset": 10
+                }
+              ],
+              "location": "ForSaleSearchSteps.i_enter_a_in_the_seach_text_box(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 247067800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select \"£250,000\" from minimum price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£250,000\"",
+                  "offset": 9
+                }
+              ],
+              "location": "ForSaleSearchSteps.i_select_from_minimum_price_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 231753800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select \"£230,000\" from maximum price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£230,000\"",
+                  "offset": 9
+                }
+              ],
+              "location": "ForSaleSearchSteps.i_select_from_maximum_price_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201557800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I select \"Houses\" from property type dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Houses\"",
+                  "offset": 9
+                }
+              ],
+              "location": "ForSaleSearchSteps.i_select_from_property_type_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 165200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select \"3+\" from Bedrooms dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3+\"",
+                  "offset": 9
+                }
+              ],
+              "location": "ForSaleSearchSteps.i_select_from_Bedrooms_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3001938000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on Search button",
+            "match": {
+              "location": "ForSaleSearchSteps.i_click_on_Search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 439678900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a list of \"Houses\" in \"Manchester\" are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Houses\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Manchester\"",
+                  "offset": 22
+                }
+              ],
+              "location": "ForSaleSearchSteps.a_list_of_in_are_displayed(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: bound must be positive\r\n\tat java.util.Random.nextInt(Random.java:388)\r\n\tat co.uk.zoopla.pages.SearchResultPage.clickOnOneOfTheResult(SearchResultPage.java:35)\r\n\tat co.uk.zoopla.stepDefinitions.ForSaleSearchSteps.i_click_on_one_of_the_result_links(ForSaleSearchSteps.java:69)\r\n\tat ✽.I click on one of the result links(file:src/test/java/co/uk/zoopla/features/CustomerCanSearchForPropertyForSale.feature:15)\r\n",
+              "duration": 9460898600,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "I click on one of the result links",
+            "match": {
+              "location": "ForSaleSearchSteps.i_click_on_one_of_the_result_links()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Search Property For Sale",
+    "description": "  As a customer\n  I want the ability to search for any property of my choice in any location\n  so that i can buy the property",
+    "id": "search-property-for-sale",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/co/uk/zoopla/features/CustomerCanSearchForPropertyForSale.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-07T21:33:33.962Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created\nfrom chrome not reachable\n  (Session info: chrome\u003d79.0.3945.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-IREQ26A\u0027, ip: \u0027192.168.1.251\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x0047A113+1548563]\n\tOrdinal0 [0x003FDDA1+1039777]\n\tOrdinal0 [0x0037E32E+516910]\n\tOrdinal0 [0x00378012+491538]\n\tOrdinal0 [0x003786EB+493291]\n\tOrdinal0 [0x00379855+497749]\n\tOrdinal0 [0x00375885+481413]\n\tOrdinal0 [0x0037F0D0+520400]\n\tOrdinal0 [0x0032C030+180272]\n\tOrdinal0 [0x0032B59D+177565]\n\tOrdinal0 [0x003295FB+169467]\n\tOrdinal0 [0x0031160A+71178]\n\tOrdinal0 [0x00312690+75408]\n\tOrdinal0 [0x00312629+75305]\n\tOrdinal0 [0x004171B7+1143223]\n\tGetHandleVerifier [0x00512B46+507814]\n\tGetHandleVerifier [0x00512864+507076]\n\tGetHandleVerifier [0x00519F47+537511]\n\tGetHandleVerifier [0x00513402+510050]\n\tOrdinal0 [0x0040F29C+1110684]\n\tOrdinal0 [0x0041938B+1151883]\n\tOrdinal0 [0x004194F3+1152243]\n\tOrdinal0 [0x004183F5+1147893]\n\tBaseThreadInitThunk [0x76E26359+25]\n\tRtlGetAppContainerNamedObjectPath [0x76FC7B74+228]\n\tRtlGetAppContainerNamedObjectPath [0x76FC7B44+180]\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat co.uk.zoopla.commons.BrowserClass.initChrome(BrowserClass.java:18)\r\n\tat co.uk.zoopla.commons.BrowserClass.launchbrower(BrowserClass.java:53)\r\n\tat co.uk.zoopla.hooks.Hook.setup(Hook.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 10555728319700,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Customer can search for any property",
+        "description": "",
+        "id": "search-property-for-sale;customer-can-search-for-any-property;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d79.0.3945.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-IREQ26A\u0027, ip: \u0027192.168.1.251\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\\Users\\Laptop\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 3a90d702045d298fad0ce47ff7f2cfb3\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)\r\n\tat co.uk.zoopla.commons.BrowserClass.closeBrowser(BrowserClass.java:78)\r\n\tat co.uk.zoopla.hooks.Hook.tearDown(Hook.java:42)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 15503700,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 81200,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I navigate to zoopla homepage",
+            "match": {
+              "location": "ForSaleSearchSteps.i_navigate_to_zoopla_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 115000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I enter a \"Manchester\" in the seach text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manchester\"",
+                  "offset": 10
+                }
+              ],
+              "location": "ForSaleSearchSteps.i_enter_a_in_the_seach_text_box(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32500,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I select \"£250,000\" from minimum price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£250,000\"",
+                  "offset": 9
+                }
+              ],
+              "location": "ForSaleSearchSteps.i_select_from_minimum_price_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29100,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I select \"£230,000\" from maximum price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£230,000\"",
+                  "offset": 9
+                }
+              ],
+              "location": "ForSaleSearchSteps.i_select_from_maximum_price_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32700,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I select \"Houses\" from property type dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Houses\"",
+                  "offset": 9
+                }
+              ],
+              "location": "ForSaleSearchSteps.i_select_from_property_type_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27800,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I select \"3+\" from Bedrooms dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3+\"",
+                  "offset": 9
+                }
+              ],
+              "location": "ForSaleSearchSteps.i_select_from_Bedrooms_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I click on Search button",
+            "match": {
+              "location": "ForSaleSearchSteps.i_click_on_Search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27600,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "a list of \"\u003cProperType\u003e\" in \"Manchester\" are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cProperType\u003e\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Manchester\"",
+                  "offset": 28
+                }
+              ],
+              "location": "ForSaleSearchSteps.a_list_of_in_are_displayed(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search Property For Sale",
+    "description": "  As a customer\n  I want the ability to search for any property of my choice in any location\n  so that i can buy the property",
+    "id": "search-property-for-sale",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/co/uk/zoopla/features/CustomerCanSearchForPropertyToRent.feature",
+    "tags": []
+  }
+]

@@ -11,13 +11,15 @@ Feature: Search Property For Sale
   And I select "<Property>" from property type dropdown
   And I select "<Bed>" from Bedrooms dropdown
   And I click on Search button
-  Then a list of "<ProperType>" in "<Location>" are displayed
+  Then a list of "<PropertyType>" in "<Location>" are displayed
+  And I click on one of the result links
+
   Examples:
-|Location|MinPrice|MaxPrice|Property|Bed|PropertyType|
-|Manchester|£250,000|£230,000|Houses|3+|Houses       |
- #|London|£120,000|£400,000|Farms/land|No min|Property |
- #|Coventry|£120,000|£230,000|Flats|3+|Flat|
- #|Birmingham|      |        |     |  |      |
+    |Location|MinPrice|MaxPrice|Property|Bed|PropertyType|
+    |Manchester|£250,000|£230,000|Houses|3+|Houses       |
+     #|London|£120,000|£400,000|Farms/land|No min|Property |
+     #|Coventry|£120,000|£230,000|Flats|3+|Flat|
+     #|Birmingham|      |        |     |  |      |
 @ignore
 Scenario Outline: Customer cannot search for property with missing values
 Given I navigate to zoopla homepage
@@ -42,6 +44,7 @@ And I select "<Property>" from property type dropdown
 And I select "<Bed>" from Bedrooms dropdown
 And I click on Search button
 Then an error result page is displayed
+
   Examples:
 |Location|MinPrice|MaxPrice|Property|Bed|PropertyType|
 |M291XC|£250,000|£230,000|Houses|3+|Houses       |
